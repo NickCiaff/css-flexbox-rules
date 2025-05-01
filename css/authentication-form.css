@@ -12,6 +12,9 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;;
 }
 
 h2 {
@@ -20,13 +23,18 @@ h2 {
 
 p {
   font-weight: bold;
+  padding-bottom: 2%;
 }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
-  border: 1px solid #a9a9a9;
-  padding: 20px;
+  border: 3px solid #919191;
+  padding: 10px;
+}
+
+.form-header {
+  padding-bottom: 20px;
 }
 
 .subtext {
@@ -34,9 +42,106 @@ form {
   font-weight: unset;
 }
 
-#sign-in,
 #sign-up {
-  width: 100%;
+  width: 50%;
+}
+
+#sign-in {
+  width: 45%;                 
+}
+
+label[for=login-field] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=password-field] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=name-field] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+  label[for=email] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=password] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=confirm-password] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=phone] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=avatar] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+.form-input-control {
+  padding: 2%;
+}
+
+.form-checkbox-control {
+  padding-left: 15px;  
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.form-submit-control {
+  gap: 15px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+}
+
+label[for=state] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+label[for=city] {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#state {
+  width: 300px;
+  height: 30px;
+}
+#city {
+  width: 300px;
+  height: 30px;
 }
 
 a {
@@ -46,6 +151,18 @@ a {
 
 label {
   font-weight: bold;
+}
+
+label[for=male] {
+  font-weight: lighter;
+}
+
+label[for=female] {
+  font-weight: lighter;
+}
+
+label[for=other] {
+  font-weight: lighter;
 }
 
 input {
@@ -58,7 +175,6 @@ input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
   height: max-content;
-  padding: 0;
 }
 
 input[type="submit"] {
